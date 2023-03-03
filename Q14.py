@@ -4,6 +4,7 @@ import collections
 from collections import deque
 import time
 
+# 사전 준비
 class ListNode:
     def __init__(self, val = 0, next = None):
         self.val = val
@@ -22,6 +23,7 @@ node6 = ListNode(5)
 node4.next = node5
 node5.next = node6
 
+# 시간측정
 start_time = time.time()
 time.sleep(1)
 
