@@ -1,7 +1,4 @@
 # Q19. 인덱스 m에서 n까지를 역순으로 만들어라. 인덱스m은 1부터 시작한다. 
-import typing
-import collections
-from collections import deque
 import time
 
 class ListNode:
@@ -48,8 +45,8 @@ def reverseBetween(head: ListNode, m, n):
     return root.next
 
 
-result = reverseBetween(node1, 2, 4)
 
+result = reverseBetween(node1, 2, 4)
 end_time = time.time()
 print("result:", result)
 
@@ -57,7 +54,6 @@ while result:
     print(result.val)
     # 출력 후 다음으로 넘어가기
     result = result.next
-    
-time_ = end_time - start_time
 
+time_ = end_time - start_time
 print(f'time: {time_:.3f}')
