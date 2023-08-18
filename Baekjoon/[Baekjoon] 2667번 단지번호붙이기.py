@@ -24,7 +24,7 @@ sys.setrecursionlimit(10**6)
 ## 방문하지 않은 집 1을 만나면 -> 큰 유닛을 찾기 위해 루프 돌도록 작성
 
 N = int(sys.stdin.readline()) # 행렬 크기 정의
-# matrix = [list(sys.stdin.readline()) for _ in range(N)] # 행렬 정보 입력 -> 본 문제에서 Error 유발
+# matrix = [list(sys.stdin.readline()) for _ in range(N)]
 matrix = [list(map(int, input())) for _ in range(N)]
 
 d = [(1, 0), (-1, 0), (0, 1), (0, -1)]  # 이동 가능 네 방향 
